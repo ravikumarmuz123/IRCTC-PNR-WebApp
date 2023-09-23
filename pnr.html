@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC PNR Status</title>
+    <link rel="stylesheet" href="pnr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Nunito&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ctr-fluid">
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://irctc.co.in"><img src="https://logos-world.net/wp-content/uploads/2020/11/IRCTC-Logo.png" alt="IRCTC-Logo"></a>
+            </div>
+            <div class="navItems">
+                <button>Home</button>
+                <button>About Us</button>
+                <button>Contact Us</button>
+                <button>Business Support</button>
+                <button id="clock"></button>
+            </div>  
+        </div>
+        <div class="services-ctr">
+            <button onclick="runPNRFunc()" class="service-button">PNR Status</button>
+            <button onclick="runSeatFunc()" class="service-button">Seat Availablity</button>
+            <button onclick="runScheduleFunc()" class="service-button">Train Schedule</button>
+            <button onclick="runRunningFunc()" class="service-button">Running Status</button>
+            
+        </div>
+        <div class="content-ctr">
+            <div id="search-ctr">
+                <h1>IRCTC PNR Status</h1>
+                <input type="text" id="inputPNR" placeholder="Enter 10 digit PNR Number">
+                <button onclick="CheckPnrStatus_Click()" class="main-btn">Check PNR Status</button>
+            </div>
+            <div id="searchResult-ctr"></div>
+        </div>
+        <footer>
+            this is footer
+        </footer>
+    </div>
+    <script src="pnr.js"></script>
+</body>
+</html>
